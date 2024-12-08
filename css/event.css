@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.events-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+
+ /* h1 {
+    position: relative;
+    font-size: 3rem;
+    color: #fff; /* Default text color */
+    /* background:
+      radial-gradient(circle, black 50%, transparent) center/var(--d, 0) var(--d, 0) no-repeat,
+      linear-gradient(#808080 0 0) bottom -12px left 50% /15px 15px no-repeat;
+    transition: 0.3s, background-position 0.3s 0.3s;
+}  */ */
+h1:hover {
+    transition: 0.3s, background-size 0.4s 0.3s, color 0.3s 0.3s;
+    background-position: center;
+    --d: 180%;
+    /* color: #cded09; Hover text color */
+}
+  
+
+.events-grid {
+    display: grid;
+    justify-content: center; /* Center the grid items */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 50px; /* Spacing between the items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; /* Add padding to the grid to create equal space on both sides */
+}
+
+.event-card {
+    position: relative;
+    width: 260px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the tilt and shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px; /* Adjust image height */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 10px;
+    border: 1px solid;
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for blur and shadow */
+    box-shadow: -1px 1px 20px 0px rgb(124 85 85 / 69%), 0 0 10px rgb(108 108 108 / 70%);
+}
+.event-card:hover img {
+    filter: blur(3px); /* Blurring effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Add shadow on hover */
+}
+
+.event-card .event-content {
+    padding: 10px;
+    color: #fff;
+}
+
+.event-card p {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-text p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
+
+.event-card:hover .hover-text {
+    opacity: 1;
+}
+
+.event-card:hover .event-content p {
+    opacity: 0; /* Hide the text on hover */
+    
+}
+
+/* Add a shadow around the card */
+.event-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow by default */
+}
+
+.event-card:hover {
+    transform: rotate(-1.7deg); /* Slight left tilt on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    display: flex;
+    flex-direction: column; /* Added to make description below the title */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for text visibility */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; /* Ensure the container spans the full card width */
+    height: 100%; /* Ensure full card height is used */
+    box-sizing: border-box; /* Adjusts for padding */
+}
+
+
+.event-card:hover {
+    transform: rotate(-2.7deg); /* Slight left tilt on hover */
+}
+
+.hover-text p {
+    font-size: 1rem;
+    font-weight: normal;
+    /* word-wrap: break-word; Break long words */
+    overflow-wrap: break-word; /* Ensure no text overflow */
+    margin: 0;
+}
+
+.event-card:hover img {
+    filter: blur(0px); /* Blurring effect on hover */
+}
+
+.event-card:hover .hover-text {
+    opacity: 1; /* Make the hover text visible on hover */
+}
+
+/* Move the "E-Summit" text to the top on hover */
+.event-card:hover .event-content p {
+    position: absolute;
+    top: 50px; /* Position it at the top */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 24px;
+    /* background-color: rgba(0, 0, 0, 0.8);  */
+    border-radius: 10px 10px 0 0; /* Rounded corners for top */
+    opacity: 1; /* Ensure it's visible */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hide the "E-Summit" text when not hovered */
+.event-card p {
+    transition: opacity 0.3s ease;
+}
+
+.event-card:hover p {
+    opacity: 1;
+}
+
+/* On hover, move "E-Summit" to the top and make it visible */
+.event-card:hover .event-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  /* Animation for moving stars */
+@keyframes moveStars {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+  
+    50% {
+      transform: translateY(100px) translateX(100px);
+    }
+  
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  .big {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 0px 12px 3px #0e0d0ded;
+   
+    /* To prevent stars from overflowing */
+    z-index: 0;
+    /* Stars should be at the background */
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        gap: 30px; /* Adjust spacing between items */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+        gap: 20px; /* Reduce gap for smaller screens */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    .event-card {
+        width: 100%; /* Full width for small screens */
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .event-card p {
+        font-size: 1rem; /* Reduce font size on smaller screens */
+    }
+
+    .hover-text p {
+        font-size: 0.9rem; /* Smaller text for hover description */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust main heading size */
+    }
+
+    .events-section {
+        padding: 30px 10px; /* Adjust section padding */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .event-card img {
+        height: auto; /* Allow the image to scale proportionally */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .event-card {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow on smaller screens */
+    }
+
+    .event-card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Softer shadow on hover */
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 90%; /* Slightly reduce width for tablets */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width for mobile devices */
+        padding: 0 15px; /* Add padding to prevent content from touching screen edges */
+    }
+}
+@media only screen and (max-width: 768px) {
+    button, input[type="submit"], a {
+        padding: 12px 20px; /* Make buttons larger for touch screens */
+        font-size: 1.1rem; /* Increase text size for better readability */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .big {
+        height: auto; /* Allow the section height to adjust based on content */
+    }
+
+    /* .stars {
+        display: none; /* Hide stars on mobile for better visibility */
+    } */
+
+
+
+
+
+/* Media Query for Tablets */
+
+  
+    .slider-text {
+      height: 500px; /* Adjust height for smaller screens */
+    }
+  
+    .hero-wrap {
+      height: calc(80vh - 117px); /* Adjust height for responsiveness */
+      
+    }
+  
+    .hero-wrap .overlay {
+      opacity: 0.6; /* Slightly reduce overlay opacity */
+    }
+
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 767.98px) {
+    .slider-text h1 {
+      font-size: 30px; /* Smaller font for mobiles */
+      margin-bottom: 10px; /* Adjust margin */
+    }
+  
+    .slider-text p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  
+    .slider-text {
+      height: 300px; /* Shorter height for mobiles */
+    }
+  
+    .hero-wrap {
+      height: calc(60vh - 117px); /* Reduce height for mobiles */
+      min-height: 400px; /* Ensure minimum height */
+    }
+  }
+  
+  /* Media Query for Extra Small Mobile Devices */
+  @media (max-width: 575.98px) {
+    .slider-text h1 {
+      font-size: 24px; /* Even smaller font */
+    }
+  
+    .slider-text p {
+      font-size: 14px; /* Smaller paragraph font */
+    }
+  
+    .slider-text {
+      height: 250px; /* Adjust for smallest screens */
+    }
+  
+    .hero-wrap {
+      height: calc(50vh - 117px); /* Further reduce height */
+    }
+  }
+
+
+  
+  

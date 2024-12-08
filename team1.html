@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>V-EDC | TEAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/team.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="font-family: Roboto,sans-serif,'Times New Roman', Times, serif;">
+	
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+		<img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo">
+	     <a href="index.html"> <img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo"></a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu text-white"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <!-- <li class="nav-item"><a href="fundamentals.html" class="nav-link">The Fundamentals</a></li> -->
+			<li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+			<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Magazines</a></li> -->
+			<li class="nav-item active"><a href="team1.html" class="nav-link">Team</a></li>
+      <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+			<!-- <li class="nav-item"><a href="https://ecellvitpune.com/esummit/" class="nav-link">Esummit '23</a></li> -->
+			<li class="nav-item"><a href="gallery1.html" class="nav-link">Gallery</a></li>
+			<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+  
+
+    <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    const colors = [
+      "#9c27b0", "#8e24aa", "#7b1fa2", "#6a1b9a", "#4a148c", "#311b92",
+      "#3f51b5", "#3949ab", "#303f9f", "#283593", "#1e88e5", "#1976d2",
+      "#1565c0", "#0d47a1", "#512da8", "#5e35b1", "#673ab7", "#4527a0",
+      "#283593", "#3f51b5", "#304ffe", "#536dfe"
+    ];
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+
+    window.addEventListener("mousemove", function(e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+  </script>
+  
+
+
+    
+    <section class="team">
+      <div class="center">
+        <h1>Our Team</h1>
+      </div>
+      
+      <div class="team-content">
+        <div class="box president">
+          <img src="images/Team/New Team/Board/Ishawar borade.jpg" alt="President">
+          <h3>Ishawar Borade</h3>
+          <h5>Convener</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/ishawar-borade-96b8a226b/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h2> ADVISORY </h2>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/Vaishnavi_convener.jpg" alt="President1">
+          <h3>Vaishnavi Shivakumar</h3>
+          <h5>Honorary Convener</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/vaishnavi-shivakumar-88ba28229/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/Divyanshi Singh_Cheif of Management.jpg" alt="Steph Jobs">
+          <h3>Divyanshi Singh</h3>
+          <h5>Chief Advisor</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/divyanshi-singh-49ab7a234/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/Harshvardhan.jpg" alt="Steph Jobs">
+          <h3>Harshvardhan Veer</h3>
+          <h5>Chief Advisor</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/harshvardhan-veer-191182241/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h2> Mentor </h2>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Board/Soumil joshi.jpg" alt="President1">
+          <h3>Soumil Joshi</h3>
+          <h5>Social Media Mentor</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h2> CHIEFS </h2>
+        </div>
+        
+        <div class="box">
+          <img src="images/Team/New Team/Board/mohit garg.jpg" alt="Steph Jobs">
+          <h3>Mohit Garg</h3>
+          <h5>Chief of Admin</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/mohit-garg-a7a893258/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+    
+        <div class="box">
+          <img src="images/Team/New Team/Board/prajyot.jpg" alt="Anna Doe">
+          <h3>Prajyot Borikar</h3>
+          <h5>Chief of Branding</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/prajyotborikar322/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+    
+        <div class="box">
+          <img src="images/Team/New Team/Board/shriyog.jpg" alt="Mark Smith">
+          <h3>Shriyog Muley</h3>
+          <h5>Chief of Management</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/shriyog-muley-2b5a1b293/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Board/sanskruti shinde.jpg" alt="Mark Smith">
+          <h3>Sanskruti Shinde</h3>
+          <h5>Chief of Relations</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/sanskruti-shinde-9044a9253/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h2> LIAISONS </h2>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Board/AYUSH DEOKAR .jpg" alt="Mark Smith">
+          <h3>Ayush Deokar</h3>
+          <h5>Liaison of Admin</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/ayush-deokar-a98811257/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Board/aryan mundra.JPG" alt="Mark Smith">
+          <h3>Aryan Mundra</h3>
+          <h5>Liaison of Branding</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/aryan-mundra-512b64218/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Board/Ashlesha_Wagh.jpg" alt="Mark Smith">
+          <h3>Ashlesha Wagh</h3>
+          <h5>Liaison of Relations</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/ashlesha-wagh-14896125b/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        
+      
+        <div class="president small-box">
+          <h2> SECRETARIES </h2>
+        </div>
+
+        <div class="president small-box">
+          <h3> AESTHETICS</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/rajvee pardeshi.jpg" alt="Mark Smith">
+          <h3>Rajvee Pardeshi</h3>
+          <h5>Aesthetics Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/rajvee-pardeshi-a10582322/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/shubham puniwala.jpg" alt="Mark Smith">
+          <h3>Shubham Puniwala</h3>
+          <h5>Aesthetics Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/shubham-nilesh-puniwala-516880256/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3> CONTENT </h3>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/pallak gupta.jpg" alt="Mark Smith">
+          <h3>Palak Gupta</h3>
+          <h5>Content Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/pallak-gupta-6468b01b6/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>CORPORATE RELATIONS AND EXTERNAL AFFAIRS</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/ruturaj sutar.jpg" alt="Mark Smith">
+          <h3>Ruturaj Sutar</h3>
+          <h5>CR & EA Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/ruturaj-sutar/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/sumit naik.jpg" alt="Mark Smith">
+          <h3>Sumit Naik</h3>
+          <h5>CR & EA Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/sumit-naik9803/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>DATABASE</h3>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/atharva gore.PNG" alt="Mark Smith">
+          <h3>Atharva Gore</h3>
+          <h5>Database Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/atharva-gore-internship/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>EDITORIAL</h3>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/shambhavi deshpande.jpg" alt="Mark Smith">
+          <h3>Shambhavi Deshpande</h3>
+          <h5>Editorial Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/shambhavi-deshpande-041242285/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>EVENT EXECUTION</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/kumar nandwalkar.jpg" alt="Mark Smith">
+          <h3>Kumar Nandwalkar</h3>
+          <h5>Event Execution Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/kumar-nandwalkar/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/pratik jadhav.jpg" alt="Mark Smith">
+          <h3>Pratik Jadhav</h3>
+          <h5>Event Execution Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/pratik-jadhav-530488258/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>FINANCE</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/Manas Wagle.JPG" alt="Mark Smith">
+          <h3>Manas Wagle</h3>
+          <h5>Finance Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/manas-wagle-a62b44258/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/tejas runwal.jpg" alt="Mark Smith">
+          <h3>Tejas Runwal</h3>
+          <h5>Finance Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/tejas-runwal-152b02256/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>MARKETING AND OUTREACH</h3>
+        </div>
+
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/owais sayed.jpg" alt="Mark Smith">
+          <h3>Owais Sayed</h3>
+          <h5>Marketing & Outreach Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/owais-sayed-a38478213/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/saakshi salvi.jpg" alt="Mark Smith">
+          <h3>Saakshi Salvi</h3>
+          <h5>Marketing & Outreach Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/saakshi-salvi-ba5b3b323/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/mandar mahapure.jpg" alt="Mark Smith">
+          <h3>Mandar Mahapure</h3>
+          <h5>Marketing & Outreach Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/mandar-mahapure-673830276/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>Multimedia & Design Secretary</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/krishna ardhapurkar.jpg" alt="Mark Smith">
+          <h3>Krishna Ardhapurkar</h3>
+          <h5>Multimedia & Design Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/krishna-ardhapurkar-a62331288/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+  
+
+        <div class="box" >
+          <img src="images/Team/New Team/Secretaries/siddhi chollangi.jpg" alt="Mark Smith">
+          <h3>Siddhi Chollangi</h3>
+          <h5>Multimedia & Design Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/siddhi-chollangi-70b334288/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/Sarthak Biyani.png" alt="Mark Smith">
+          <h3>Sarthak Biyani</h3>
+          <h5>Multimedia & Design Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/sarthak-biyani-3098ab259/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>OPERATIONS AND VENUE</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/akhil mate.jpg" alt="Mark Smith">
+          <h3>Akhil Mate</h3>
+          <h5>Operations & Venue</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/akhil-mate-142346253/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/shubham patil.jpg" alt="Mark Smith">
+          <h3>Shubham Patil</h3>
+          <h5>Operations & Venue</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/shubham-patil-36a79b278/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>PUBLIC RELATIONS</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/yash kolekar.jpg" alt="Mark Smith">
+          <h3>Yash Kolekar</h3>
+          <h5>Public Relations Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/yash-kolekar25/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/yash sankh.jpg" alt="Mark Smith">
+          <h3>Yash Sankh</h3>
+          <h5>Public Relations Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/yash-sankh-5434a8293/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>SOCIAL MEDIA</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/manav dongare.jpg" alt="Mark Smith">
+          <h3>Manav Dongare</h3>
+          <h5>Social Media Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/manav-dongare-71b174296/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/nishka jain.jpg" alt="Mark Smith">
+          <h3>Nishka Jain</h3>
+          <h5>Social Media Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/nishka-jain-a205782b0/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>SPONSORSHIP</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/isha thakur.jpg" alt="Mark Smith">
+          <h3>Isha Thakur</h3>
+          <h5>Sponsorship Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/isha-thakur-308778293/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/tanmai tale.jpg" alt="Mark Smith">
+          <h3>Tanmai Tale</h3>
+          <h5>Sponsorship Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/tanmai-tale-4099a028a/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>START-UP CONNECT</h3>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/Satyajit Shinde.jpg" alt="Mark Smith">
+          <h3>Satyajit Shinde</h3>
+          <h5>Start-Up Connect Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/satyajitshinde/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/Team/New Team/Secretaries/shourya bhade.jpg" alt="Mark Smith">
+          <h3>Shourya Bhade</h3>
+          <h5>Start-Up Connect Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/shourya-bhade-b9a42028a/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="president small-box">
+          <h3>WEBSITE AND BROADCASTING</h3>
+        </div>
+
+        <div class="box president">
+          <img src="images/Team/New Team/Secretaries/Prajwal weladi.jpg" alt="Mark Smith">
+          <h3>Prajwal Weladi</h3>
+          <h5>Website & Broadcasting Secretary</h5>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/prajwal-weladi-750099282/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+   
+   <footer class="ftco-footer ftco-section img" style="padding-top:50px;padding-bottom: 10px;">
+	<div class="overlay"></div>
+  <div class="container">
+	<div class="row mb-6">
+	  <div class="col-md-3">
+		<div class="ftco-footer-widget mb-4">
+		  <h2 class="ftco-heading-2">About Us</h2>
+		  <p>The Entrepreneurship Development Cell of VIT Pune aims to produce successful entrepreneurs imbibed with leadership qualities using innovative and ethical business practices to make a global impact.</p>
+		  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+			<li class="ftco-animate"><a href="https://www.instagram.com/v_edc/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+			<li class="ftco-animate"><a href="https://in.linkedin.com/company/v-edc" target="_blank"><span class="icon-linkedin"></span></a></li>
+			<li class="ftco-animate"><a href="https://www.youtube.com/channel/UC3AQpWaFTdhi59CwYsqVmqA" target="_blank"><span class="icon-youtube"></span></a></li>
+		  </ul>
+		</div>
+	  </div>
+	 <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blogs</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/Untitled\ design\ \(5\).png);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/the-marketing-umbrella/17931748963874272/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">The Marketing Umbrella</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> October 6, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/307463161_478072170877193_8574256785367174507_n.jpeg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/financing-milestones/17939998226446892/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">Financing Milestone</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> September 26, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+	  <div class="col-md-2">
+		 <div class="ftco-footer-widget mb-4 ml-md-4">
+		  <h2 class="ftco-heading-2">Site Links</h2>
+		  <ul class="list-unstyled">
+			<li><a href="index.html" class="py-2 d-block">Home</a></li>
+			<li><a href="about.html" class="py-2 d-block">About</a></li>
+			 <li><a href="event.html" class="py-2 d-block">Event</a></li>
+			<li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="col-md-3">
+		<div class="ftco-footer-widget mb-4">
+			<h2 class="ftco-heading-2">Have any Questions?</h2>
+			<div class="block-23 mb-3">
+			  <ul>
+				<li><span class="icon icon-map-marker"></span><span class="text">Vishwakarma Institute of Technology
+				666, Upper Indiranagar, Bibwewadi,
+				Pune, Maharashtra, India - 411 037</span></li>
+				<li><a><span class="icon icon-phone"></span><span class="text">Ishawar Borade <br> Convener <br> +91 9156834407</span></a></li>
+				<li><a href="mailto: edc@vit.edu"><span class="icon icon-envelope"></span><span class="text">edc@vit.edu</span></a></li>
+			  </ul>
+			</div>
+		</div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-12 text-center">
+
+		<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | V-EDC VIT Pune</a>
+<div>Designed with 💖 by V-EDC</div>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	  </div>
+	</div>
+  </div>
+</footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FFFFFF"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

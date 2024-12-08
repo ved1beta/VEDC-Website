@@ -1,0 +1,65 @@
+.section-header {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+
+
+.section-divider {
+    width: 50%;
+    margin: 0 auto 20px; /* Centered and spaced */
+    border: 2px solid #3498db; /* Blue color for the divider */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.intro-text {
+    font-size: 1.1em; /* Slightly larger font for readability */
+    color: #555; /* Dark gray color for text */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.goals {
+    margin-top: 20px; /* Space above the goals section */
+}
+
+.goals a {
+    font-weight: bold; /* Bold for goal headings */
+    color: #3498db; /* Blue color for links */
+}
+
+ol {
+    margin-left: 20px; /* Indent list items */
+    color: #333; /* Darker color for list items */
+    font-size: 1.1em; /* Increase font size for better visibility */
+}
+
+ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #f0f4c3 30%, #c5e1a5 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.welcome-card:hover {
+    transform: scale(1.05);
+}
+
+
+.subheading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+

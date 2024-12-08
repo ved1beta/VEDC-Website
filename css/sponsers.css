@@ -1,0 +1,186 @@
+.sponserContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: black;
+  margin-top: -29px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.cards {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animation for moving stars */
+@keyframes moveStars {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(100px) translateX(100px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+
+.cards {
+  width: 220px;
+  height: 220px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: -0px 0px 2px 1px #17e4ff, 0px 0px 0px #17e4ff;
+  transition: 0.2s ease-in-out;
+  margin: 3%;
+}
+
+.cards img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.cards:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(13, 13, 13, 0.1);
+}
+
+.save:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.save:hover .svg {
+  fill: #ced8de;
+}
+
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 218px 0;
+  background: #9393978a;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -29px;
+  padding-bottom: initial;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:after {
+  right: 0;
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: running;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  margin: 0 40px;
+  margin-top: -244px;
+  width: 150px;
+  height: 10%;
+  border: 2px solid black;
+  border-radius: 1px solid black;
+  box-shadow: -1px -1px 10px 1px #006ff9a6;
+  /* Adds a soft shadow */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+  /* Adds a glowing effect */
+  transition: box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.logos-slide img:hover {
+  box-shadow: 0 0 30px rgb(19, 0, 88);
+  /* Stronger shadow on hover */
+  /* filter: drop-shadow(0 0 20px rgb(66, 0, 0)); */
+  /* Stronger glow on hover */
+}
+
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: 0.5;
+  background: #000;
+  box-shadow: -1px 0px 12px 3px #030202ed;
+}
+
+
+.logo1 {
+  border-radius: 100px;
+
+
+}
+
+
+
+
+.big {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: -1px 0px 12px 3px #0e0d0ded;
+ 
+  /* To prevent stars from overflowing */
+  z-index: 0;
+  /* Stars should be at the background */
+}
+
+

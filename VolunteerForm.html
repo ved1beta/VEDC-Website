@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>V-EDC | TEAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/VolunteerForm.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="font-family: Roboto,sans-serif,'Times New Roman', Times, serif;">
+	
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+		<img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo">
+	     <a href="index.html"> <img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo"></a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu text-white"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <!-- <li class="nav-item"><a href="fundamentals.html" class="nav-link">The Fundamentals</a></li> -->
+			<li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+			<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Magazines</a></li> -->
+			<li class="nav-item active"><a href="team1.html" class="nav-link">Team</a></li>
+      <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+			<!-- <li class="nav-item"><a href="https://ecellvitpune.com/esummit/" class="nav-link">Esummit '23</a></li> -->
+			<li class="nav-item"><a href="gallery1.html" class="nav-link">Gallery</a></li>
+			<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+  
+
+    <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    const colors = [
+      "#9c27b0", "#8e24aa", "#7b1fa2", "#6a1b9a", "#4a148c", "#311b92",
+      "#3f51b5", "#3949ab", "#303f9f", "#283593", "#1e88e5", "#1976d2",
+      "#1565c0", "#0d47a1", "#512da8", "#5e35b1", "#673ab7", "#4527a0",
+      "#283593", "#3f51b5", "#304ffe", "#536dfe"
+    ];
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+
+    window.addEventListener("mousemove", function(e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+  </script>
+  
+
+
+    
+    <section class="team">
+      <div class="center">
+        <h1>Volunteer Recruitment</h1>
+      </div>
+      
+      <div class="team-content">      
+      
+        <div class="president small-box">
+          <h2><a href="https://forms.gle/MnErXae2dJK1XCXz8" target="_blank" style="text-decoration: none; color: inherit;">Apply Now!!</a></h2>
+      </div>
+      
+
+        <div class="box">
+          <h3>Aesthetics Volunteer</h3> <br>
+          <h5>The Aesthetics team makes sure events look visually appealing and well-designed. They bring creative ideas to life to enhance the overall presentation.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Content Volunteer</h3> <br>
+          <h5>The Content team provides well-researched and curated content for official materials such as magazines, stories, and reports. They ensure all work is original and maintain a high level of professionalism.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Corporate Relations and External Affairs Volunteer</h3><br>
+          <h5>The Corporate Relations & External Affairs Volunteer builds and maintains professional connections with entrepreneurs, investors, and the corporate sector. They also help in sourcing speakers, judges, and startups for various events.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Database Volunteer</h3><br>
+          <h5>The role involves managing and organising data related to events, members, startups, and competition winners, acting as a central repository of information for future reference.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Editorial Volunteer</h3><br>
+          <h5>The role involves writing and maintaining the Cell's documentation for college club reports. The Editorial Volunteer will also curate content for Udyamita, the official magazine of the Cell while collaborating closely with the Content domain.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Event Execution Volunteer</h3><br>
+          <h5>As an Event Execution Volunteer, you'll help manage merchandise and refreshments, and assist with on-day event tasks, making sure everything runs smoothly. This role involves planning, coordination, and contributing to a successful, memorable event experience.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Marketing & Outreach Volunteer</h3><br>
+          <h5>The Marketing & Outreach role focuses on promoting event branding beyond social media, ensuring V-EDC's activities are well-known within the college and the broader community. This role also aims to attract strong participation from both on-campus and external audiences.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Multimedia & Design Volunteer</h3><br>
+          <h5>The role involves creating posters and videos for events, social media, and branding. Applicants should have skills in either graphic design for visually appealing posters or video editing. Additionally, they should bring fresh, efficient, and innovative ideas for design and related projects.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Operations & Venue Volunteer</h3> <br>
+          <h5>Operations involve strategizing, managing venues, and executing events, along with overseeing merchandise. This role includes meeting all event requirements, from resource allocation and securing venue permissions to planning and smooth execution.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Public Relations Volunteer</h3> <br>
+          <h5>The Public Relations Volunteer builds and maintains professional relationships with E-Cells at other colleges to foster collaborations and expand event outreach to various institutions. This role also focuses on maintaining a positive reputation for V-EDC within the community.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Social Media Volunteer</h3> <br>
+          <h5>The Social Media team manages all social media and streaming platforms, analyzing audience data to track growth and reach. Applicants should have relevant experience, as they play a key role in shaping and enhancing our online presence.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Sponsorship Volunteer</h3> <br>
+          <h5>The role involves maintaining strong connections with our sponsors by reaching out to potential sponsors and securing sponsorships for events. Additionally, it’s important to ensure that sponsors have a positive experience and no complaints regarding their partnership with V-EDC.
+          </h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Start-up Connect Volunteer</h3> <br>
+          <h5>The Start-up Connect Volunteer is responsible for building and nurturing a community around our college's existing startups while developing solutions to strengthen their ideas. The role also involves keeping community members engaged and connected.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Website & Broadcasting Volunteer</h3> <br>
+          <h5>This domain focuses on technical tasks such as managing the website, creating forms and tickets for events, and developing strategies to boost our website's reach. It also ensures that all information about V-EDC, including events and team members, is current and accurate on the website.</h5>
+          <div class="icons styled-button">
+            <a target="_blank" href="https://forms.gle/MnErXae2dJK1XCXz8">Apply Now</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+   
+   <footer class="ftco-footer ftco-section img" style="padding-top:50px;padding-bottom: 10px;">
+	<div class="overlay"></div>
+  <div class="container">
+	<div class="row mb-6">
+	  <div class="col-md-3">
+		<div class="ftco-footer-widget mb-4">
+		  <h2 class="ftco-heading-2">About Us</h2>
+		  <p>The Entrepreneurship Development Cell of VIT Pune aims to produce successful entrepreneurs imbibed with leadership qualities using innovative and ethical business practices to make a global impact.</p>
+		  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+			<li class="ftco-animate"><a href="https://www.instagram.com/v_edc/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+			<li class="ftco-animate"><a href="https://in.linkedin.com/company/v-edc" target="_blank"><span class="icon-linkedin"></span></a></li>
+			<li class="ftco-animate"><a href="https://www.youtube.com/channel/UC3AQpWaFTdhi59CwYsqVmqA" target="_blank"><span class="icon-youtube"></span></a></li>
+		  </ul>
+		</div>
+	  </div>
+	 <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blogs</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/Untitled\ design\ \(5\).png);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/the-marketing-umbrella/17931748963874272/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">The Marketing Umbrella</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> October 6, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/307463161_478072170877193_8574256785367174507_n.jpeg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/financing-milestones/17939998226446892/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">Financing Milestone</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> September 26, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+	  <div class="col-md-2">
+		 <div class="ftco-footer-widget mb-4 ml-md-4">
+		  <h2 class="ftco-heading-2">Site Links</h2>
+		  <ul class="list-unstyled">
+			<li><a href="index.html" class="py-2 d-block">Home</a></li>
+			<li><a href="about.html" class="py-2 d-block">About</a></li>
+			 <li><a href="event.html" class="py-2 d-block">Event</a></li>
+			<li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="col-md-3">
+		<div class="ftco-footer-widget mb-4">
+			<h2 class="ftco-heading-2">Have any Questions?</h2>
+			<div class="block-23 mb-3">
+			  <ul>
+				<li><span class="icon icon-map-marker"></span><span class="text">Vishwakarma Institute of Technology
+				666, Upper Indiranagar, Bibwewadi,
+				Pune, Maharashtra, India - 411 037</span></li>
+				<li><a><span class="icon icon-phone"></span><span class="text">Ishawar Borade <br> Convener <br> +91 9156834407</span></a></li>
+				<li><a href="mailto: edc@vit.edu"><span class="icon icon-envelope"></span><span class="text">edc@vit.edu</span></a></li>
+			  </ul>
+			</div>
+		</div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-12 text-center">
+
+		<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | V-EDC VIT Pune</a>
+<div>Designed with 💖 by V-EDC</div>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	  </div>
+	</div>
+  </div>
+</footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FFFFFF"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

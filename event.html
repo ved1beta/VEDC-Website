@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>V-EDC | Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event.css">
+    
+
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+  </head>
+  <body>
+    
+<style>
+  .ftco-section{
+    text-align: justify;
+  }
+</style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="index.html">ENTREPRENEURSHIP <div>DEVELOPMENT CELL</div></a> -->
+        <img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo">
+	       <a href="index.html"> <img class="img-thumbnail" src="images/VEDC_Logo1__1_-removebg-preview.png" alt="logo"></a>
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <!-- <li class="nav-item"><a href="fundamentals.html" class="nav-link">The Fundamentals</a></li> -->
+          <li class="nav-item active"><a href="event.html" class="nav-link">Events</a></li>
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Magazines</a></li> -->
+          <li class="nav-item"><a href="team1.html" class="nav-link">Team</a></li>
+          <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+          <!-- <li class="nav-item"><a href="https://ecellvitpune.com/esummit/" class="nav-link">Esummit '23</a></li> -->
+          <!-- <li class="nav-item"><a href="Connectus.html" class="nav-link">Connect with us</a></li> -->
+          <li class="nav-item"><a href="gallery1.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- END nav -->
+  
+
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    const colors = [
+      "#9c27b0", "#8e24aa", "#7b1fa2", "#6a1b9a", "#4a148c", "#311b92",
+      "#3f51b5", "#3949ab", "#303f9f", "#283593", "#1e88e5", "#1976d2",
+      "#1565c0", "#0d47a1", "#512da8", "#5e35b1", "#673ab7", "#4527a0",
+      "#283593", "#3f51b5", "#304ffe", "#536dfe"
+    ];
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+
+    window.addEventListener("mousemove", function(e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+  </script>
+
+
+    
+        <div style="opacity: 0.1;">
+          <video autoplay muted loop playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+              <source src="images/Events Capture/EventsVideo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <!-- Your content here -->
+      </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '90%' }">
+             <!-- <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Event</span></p> -->
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '50%', opacity: 1.6 }">Events</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==========================
+    Intro Section
+  ============================-->
+  <!-- #intro -->
+   <div class="big" id="app">
+ 
+     <!-- Vue.js Stars -->
+         <div class="stars" v-for="star in stars" :key="star.id" :style="star.style"></div>
+          <section class="events-section">
+              
+              <div class="events-grid">
+                  <div class="event-card">
+                      <img src="./images/events/Esummit22-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>E-Summit'22</p>
+                          <div class="hover-text">
+                              <p>The Second E-Summit of VIT Pune nurtures entrepreneurship with competitions, activities, workshops, and inspiring sessions.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/Esummit21-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>E-Summit'21</p>
+                          <div class="hover-text">
+                              <p>
+                                  The First E-Summit of VIT Pune, E-Summit’21, was a dynamic entrepreneurial event curated by the official E-Cell to offer a unique and growth-focused experience.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/varun-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>The Varun Mayya Webinar</p>
+                          <div class="hover-text">
+                              <p>During the challenging times of COVID-19, V-EDC hosted a webinar to guide young entrepreneurs in making informed future decisions and to offer a hopeful vision of the post-pandemic world.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/business-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>Business Re-Imagined : Bit-by-Bit
+                          </p>
+                          <div class="hover-text">
+                              <p>Business Reimagined embraced an open-for-all, free-for-all motto, serving as a hub to strengthen entrepreneurial roots. The event offered an immersive experience with insights from a panel of elite speakers</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/fundamentals1-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>The Fundamentals</p>
+                          <div class="hover-text">
+                              <p>'The Fundamentals: Branding and Beyond' offered workshops to enhance branding skills and marketing strategies. Attendees learned to craft compelling product stories with guidance from industry experts.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/internship-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>Internship Mela</p>
+                          <div class="hover-text">
+                              <p>Internship Mela offered attendees prime opportunities to kick-start their careers. It helped them explore their potential while building a strong resume.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/earn-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>Earn & Sell</p>
+                          <div class="hover-text">
+                              <p>Earn & Sell was a competition designed to ignite entrepreneurial spirit in young minds. Participants developed business ideas, pitched them, and ran their ventures on campus for a day.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="event-card">
+                      <img src="./images/events/masterclass-min.png" alt="E-Summit'22">
+                      <div class="event-content">
+                          <p>Masterclass</p>
+                          <div class="hover-text">
+                              <p>A series of Masterclasses guided attendees through the essentials of starting and scaling a successful start-up, covering ideation, establishment, legal aspects, and growth strategies.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more cards as needed -->
+              </div>
+          </section>
+      </div>
+      <!-- Vue.js Script -->
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          data() {
+            return {
+              stars: this.generateStars(150) // Generate 150 stars
+            };
+          },
+          methods: {
+            generateStars(numStars) {
+              const stars = [];
+              for (let i = 0; i < numStars; i++) {
+                const size = Math.random() * 3 + 1 + 'px';
+                const top = Math.random() * 100 + '%';
+                const left = Math.random() * 100 + 'vw';
+                const animationDuration = Math.random() * 30 + 10 + 's';
+                const animationDelay = Math.random() * 5 + 's';
+      
+                stars.push({
+                  id: i,
+                  style: {
+                    width: size,
+                    height: size,
+                    top: top,
+                    left: left,
+                    position: 'absolute',
+                    backgroundColor: 'white',
+                    borderRadius: '50%',
+                    animation: `moveStars ${animationDuration} ease-in-out infinite`,
+                    animationDelay: animationDelay
+                  }
+                });
+              }
+              return stars;
+            }
+          }
+        });
+      </script>
+      
+      
+        
+       
+        
+       
+        
+        
+      </div>
+      
+    
+  
+  
+        
+        <!-- <div class="row mt-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+		</div>
+    </div>
+
+
+
+   
+          <!--==========================
+          Footer
+           ============================-->
+           <footer class="ftco-footer ftco-section img" style="padding-top:50px;padding-bottom: 10px;">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row mb-6">
+                <div class="col-md-3">
+                  <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">About Us</h2>
+                    <p>V-EDC, The Entrepreneurship Development Cell of VIT Pune aims to produce successful entrepreneurs imbibed with leadership qualities using innovative and ethical business practices to make a global impact.</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                      <li class="ftco-animate"><a href="https://www.instagram.com/v_edc/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+                      <li class="ftco-animate"><a href="https://in.linkedin.com/company/v-edc" target="_blank"><span class="icon-linkedin"></span></a></li>
+                      <li class="ftco-animate"><a href="https://www.youtube.com/channel/UC3AQpWaFTdhi59CwYsqVmqA" target="_blank"><span class="icon-youtube"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blogs</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/Untitled\ design\ \(5\).png);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/the-marketing-umbrella/17931748963874272/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">The Marketing Umbrella</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> October 6, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/campaign/307463161_478072170877193_8574256785367174507_n.jpeg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="https://www.instagram.com/v_edc/guide/financing-milestones/17939998226446892/?utm_source=ig_web_copy_link&utm_campaign=&utm_medium=" target="_blank">Financing Milestone</a></h3>
+                  <div class="meta">
+                    <!-- <div><a href="#"><span class="icon-calendar"></span> September 26, 2022</a></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="col-md-2">
+                   <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Site Links</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                      <li><a href="about.html" class="py-2 d-block">About</a></li>
+                       <li><a href="event.html" class="py-2 d-block">Event</a></li>
+                      <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have any Questions?</h2>
+                    <div class="block-23 mb-3">
+                      <ul>
+                        <li><span class="icon icon-map-marker"></span><span class="text">Vishwakarma Institute of Technology
+                          666, Upper Indiranagar, Bibwewadi,
+                          Pune, Maharashtra, India - 411 037</span></li>
+                        <li><a><span class="icon icon-phone"></span><span class="text">Ishawar Borade <br> Convener <br> +91 9156834407</span></a></li>
+                        <li><a href="mailto: edc@vit.edu"><span class="icon icon-envelope"></span><span class="text">edc@vit.edu</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+      
+                  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | V-EDC VIT Pune</a>
+        <div>Designed with 💖 by V-EDC</div>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    
+  
+
+         
+
+          <script src="js/jquery.min.js"></script>
+          <script src="js/jquery-migrate-3.0.1.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/jquery.easing.1.3.js"></script>
+          <script src="js/jquery.waypoints.min.js"></script>
+          <script src="js/jquery.stellar.min.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/jquery.magnific-popup.min.js"></script>
+          <script src="js/aos.js"></script>
+          <script src="js/jquery.animateNumber.min.js"></script>
+          <script src="js/bootstrap-datepicker.js"></script>
+          <script src="js/jquery.timepicker.min.js"></script>
+          <script src="js/scrollax.min.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+          <script src="js/google-map.js"></script>
+          <script src="js/main.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>V-EDC | E-Cell VIT Pune</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="../site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/slicknav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/vlogo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-UEV7OwlgSgT2NqQ3dNllmu0vQQLMWcpiVHdF+Yb0nw7KnJiKxhC7H+zslZfCcwwAptL8XzWiu5d5fjy5n2wM8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
+</head>
+    
+    <style>
+    .align-items-center {
+        -webkit-box-align: center!important;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+        justify-content: center;
+        
+    }
+    .ti-alarm-clock:before {
+        content: "\e6c6";
+        margin: -11px;
+    }
+    .ti-location-pin:before {
+        content: "\e693";
+        margin: -11px;
+    }
+        .slider_area .title_text.title_text2:after {
+    position: absolute;
+    background-image: url(../img/banner/path2.png);
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    left: -7.5%;
+    width: 94%;
+    height: 136%;
+    top: -7%;
+    opacity: 0.6;
+}
+</style>
+
+<body>
+    
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="../https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+     <!-- header-start -->
+     <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center justify-content-between no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="../index.html">
+                                    <img src="../img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a  href="../index.html">home</a></li>
+                                         <li><a href="../schedule/">Schedule</a></li>
+                                        <!-- <li><a href="../speakers/">Speakers</a></li> -->
+                                        <li><a href="../about/">About</a></li>
+                                        <li><a href="../contact/">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                            <div class="buy_ticket">
+                                <a href="https://learner.vierp.in/event" target="
+                                _blank" class="boxed-btn-white">Register Now</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area slider_bg_1">
+        <div class="slider_text">
+            <div class="container">
+                <div class="position_relv">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="title_text title_text2 ">
+                                <h3 class="gradient">Event Schedule</h3>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="countDOwn_area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="single_date">
+                            <i class="ti-location-pin"></i>
+                            <span >Vishwakarma Institute of  </span>
+                            <span style="margin: 15px;">Technology</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="single_date">
+                            <img style="width:32px" src="../img/calender-removebg-preview.png" alt="">
+                            <span>15 April 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="single_date">
+                              <i class="ti-alarm-clock"></i>
+                            <span id="clock"></span>
+                        </div>
+                    </div>
+
+                 
+
+                    <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("April 10, 2023").getTime();
+                        
+                        // Update the count down every 1 second
+                        var x = setInterval(function() {
+                        
+                          // Get today's date and time
+                          var now = new Date().getTime();
+                            
+                          // Find the distance between now and the count down date
+                          var distance = countDownDate - now;
+                            
+                          // Time calculations for days, hours, minutes and seconds
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            
+                          // Output the result in an element with id="demo"
+                          document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+                          + minutes + "m " + seconds + "s ";
+                            
+                          // If the count down is over, write some text 
+                          if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                          }
+                        }, 1000);
+                        </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- event_area_start -->
+    <!-- <div class="event_area plus_padding"> -->
+        <!-- <h1 class="vr_text d-none d-lg-block">Event Schedule</h1> -->
+        <!-- <div class="container">
+            <div class="double_line">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="date">
+                            <h3>Day Wise Schedule</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/speakers/seaker1.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 1 </span>
+                                    <div class="time">
+                                        10/04/23
+                                    </div>
+                                </div>
+                                <p>Workshop 1 </p>
+                                <p>Venue:
+                                    Seminar Hall</p>
+                                    <p>Time: 5pm onwards</p>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="single_speaker">
+                            <img src="img/speakers/seaker2.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 2 </span>
+                                    <div class="time">
+                                        11/04/23
+                                    </div>
+                                </div>
+                                <p>Start-up Showcase </p>
+                                <p>Venue: Lawn Area</p>
+                                <p>All day <i class="fa fa-long-arrow-up" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                        <div class="single_speaker">
+                            <img src="img/speakers/seaker3.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 3  </span>
+                                    <div class="time">
+                                        12/04/23
+                                    </div>
+                                </div>
+                                <p>Workshop 2 </p>
+                                <p>Venue:
+                                    Seminar Hall</p>
+                                    <p>Time: 5-6 pm</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+<!-- 
+                --------------------------------------------------------------------- -->
+                <!-- <div class="row">
+                    <div class="col-xl-3 col-lg-3">
+                        
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="single_speaker">
+                            <img src="img/speakers/seaker1.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 4</span>
+                                    <div class="time">
+                                        13/04/23
+                                    </div>
+                                </div>
+                                <p>Elevator pitch </p>
+                                <p>Venue:
+                                    Lawn Area</p>
+                                    <p>Time: 11am -2pm</p>
+                            </div>
+                        </div> -->
+                        
+
+                        
+                        <!-- <div class="single_speaker">
+                            <img src="img/speakers/seaker2.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 5 </span>
+                                    <div class="time">
+                                        14/04/23
+                                    </div>
+                                </div>
+                                <p>Workshop 3 </p>
+                                <p>Venue: Seminar Hall</p>
+                                <p>Time: 5-6 pm </p>
+                            </div>
+                        </div>
+                        <div class="single_speaker">
+                            <img src="img/speakers/seaker3.png" alt="">
+                            <div class="speaker-name">
+                                <div class="heading d-flex justify-content-between align-items-center">
+                                    <span>Day 6  </span>
+                                    <div class="time">
+                                        15/04/23
+                                    </div>
+                                </div>
+                                <p>E-Talks </p>
+                                <p>Venue:
+                                    Seminar Hall</p>
+                                    <p>Time: 10 am to 9pm pm</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div> -->
+    <!-- event_area_end -->
+
+     <!-- faq_area_Start -->
+     <div class="faq_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="serction_title_large mb-95">
+                        <h3>
+                            Event Schedule and itinerary will be released soon
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq_area_end -->
+
+
+    <!-- resister_book_start -->
+    <div class="resister_book resister_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="resister_text text-center">
+                        <h3>Register Now to Book <br>
+                            Your Presence</h3>
+                        <a href="https://learner.vierp.in/event" target="
+                        _blank" class="boxed-btn-white">Register Now </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- resister_book_end -->
+
+    
+
+     <!-- footer_start -->
+     <footer class="footer footer_bg_1">
+     
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Follow Us
+                                </h3>
+                                <ul>
+                                 <li><img src="../img/linkedin_socialnetwork_17441 (1).png" alt=""> <a target="_blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A13403516&keywords=entrepreneurship%20development%20cell%2C%20vit%20pune&origin=RICH_QUERY_SUGGESTION&position=0&searchId=b7de8a89-6fc0-44d9-aaad-e939e134bb6c&sid=RtV">Linkedin</a></li>
+                                    <li><img src="../img/Instagram_icon-icons.com_66804.png" alt=""> <a target="_blank" href="https://www.instagram.com/v_edc/">Instagram</a></li>
+                                    <li><img src="../img/Youtube_icon-icons.com_66802.png" alt=""> <a target="_blank" href="https://www.youtube.com/@edcvitpune8565">Youtube</a></li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Links
+                                </h3>
+                                <ul>
+
+                                    <li><a href="../schedule/">Schedule</a></li>
+                                    <li><a href="../speakers/">Speakers</a></li>
+                                    <li><a href="../contact/">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Venue
+                                </h3>
+                                <p>
+                                    Sharad Arena, VIT PUNE <br>
+                                    edc@vit.edu <br>
+                                    +91 87888 15238
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="../https://ecellvitpune.com/" target="_blank">V-EDC</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- footer_end -->
+
+
+
+
+
+    <!-- JS here -->
+    <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/ajax-form.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/scrollIt.js"></script>
+    <script src="../js/jquery.scrollUp.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/nice-select.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.countdown.js"></script>
+    <script src="../js/plugins.js"></script>
+
+    <!--contact js-->
+    <script src="../js/contact.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/jquery.form.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/mail-script.js"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
