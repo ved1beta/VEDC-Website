@@ -10668,3 +10668,446 @@ body {
   font-size: 15px;
   margin-bottom: 10px;
 }
+/*  ved was here */
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Section Styles */
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container, .max-w-7xl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Background Colors */
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Card Styles */
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) 
+             rotate(var(--tw-rotate)) 
+             skewX(var(--tw-skew-x)) 
+             skewY(var(--tw-skew-y)) 
+             scaleX(var(--tw-scale-x)) 
+             scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translateY(var(--tw-translate-y));
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Colors */
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+/* Margin and Padding */
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+/* Gradient Line */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, rgb(168 85 247), rgb(236 72 153));
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+/* Icon Styles */
+.h-12 {
+  height: 3rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+/* Animations */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+/* FTCO Section Styles */
+.ftco-section {
+  padding: 6rem 0;
+}
+
+.services {
+  background: var(--tw-bg-opacity, 1);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.vision-block,
+.mission-block,
+.objectives-block {
+  height: 100%;
+}
+
+.media {
+  display: flex;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 640px) {
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* bangali mc : )  */
+/* Base Layout */
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Section Styles */
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container, .max-w-7xl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Background Colors */
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Card Styles */
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) 
+             rotate(var(--tw-rotate)) 
+             skewX(var(--tw-skew-x)) 
+             skewY(var(--tw-skew-y)) 
+             scaleX(var(--tw-scale-x)) 
+             scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translateY(var(--tw-translate-y));
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Colors */
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+/* Margin and Padding */
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+/* Gradient Line */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, rgb(168 85 247), rgb(236 72 153));
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+/* Icon Styles */
+.h-12 {
+  height: 3rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+/* Animations */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+/* FTCO Section Styles */
+.ftco-section {
+  padding: 6rem 0;
+}
+
+.services {
+  background: var(--tw-bg-opacity, 1);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.vision-block,
+.mission-block,
+.objectives-block {
+  height: 100%;
+}
+
+.media {
+  display: flex;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 640px) {
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
