@@ -10668,13 +10668,16 @@ body {
   font-size: 15px;
   margin-bottom: 10px;
 }
-/*  ved was here */
+
+
+
+/* 2/01/2025 - @yashbahirat and @ved1beta. CSS on about section */ 
+
 .wrapper {
   position: relative;
   width: 100%;
 }
 
-/* Section Styles */
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -10688,7 +10691,6 @@ body {
   padding-right: 1rem;
 }
 
-/* Background Colors */
 .bg-neutral-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
@@ -10699,7 +10701,6 @@ body {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-/* Grid Layout */
 .grid {
   display: grid;
 }
@@ -10718,7 +10719,6 @@ body {
   }
 }
 
-/* Card Styles */
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -10741,7 +10741,6 @@ body {
   transform: translateY(var(--tw-translate-y));
 }
 
-/* Typography */
 .text-center {
   text-align: center;
 }
@@ -10765,7 +10764,7 @@ body {
   font-weight: 700;
 }
 
-/* Colors */
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -10781,7 +10780,7 @@ body {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-/* Margin and Padding */
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -10806,7 +10805,7 @@ body {
   margin-top: 4rem;
 }
 
-/* Gradient Line */
+
 .bg-gradient-to-r {
   background: linear-gradient(to right, rgb(168 85 247), rgb(236 72 153));
 }
@@ -10819,7 +10818,7 @@ body {
   height: 0.25rem;
 }
 
-/* Icon Styles */
+
 .h-12 {
   height: 3rem;
 }
@@ -10828,7 +10827,7 @@ body {
   width: 3rem;
 }
 
-/* Animations */
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -10839,7 +10838,7 @@ body {
   transition-duration: 300ms;
 }
 
-/* FTCO Section Styles */
+
 .ftco-section {
   padding: 6rem 0;
 }
@@ -10868,7 +10867,7 @@ body {
   padding-left: 1rem;
 }
 
-/* Responsive Media Queries */
+
 @media (min-width: 640px) {
   .sm\:px-6 {
     padding-left: 1.5rem;
@@ -10889,14 +10888,13 @@ body {
     padding-right: 2rem;
   }
 }
-/* bangali mc : )  */
-/* Base Layout */
+
 .wrapper {
   position: relative;
   width: 100%;
 }
 
-/* Section Styles */
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -10910,7 +10908,7 @@ body {
   padding-right: 1rem;
 }
 
-/* Background Colors */
+
 .bg-neutral-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
@@ -10921,7 +10919,7 @@ body {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-/* Grid Layout */
+
 .grid {
   display: grid;
 }
@@ -10940,7 +10938,7 @@ body {
   }
 }
 
-/* Card Styles */
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -10963,7 +10961,7 @@ body {
   transform: translateY(var(--tw-translate-y));
 }
 
-/* Typography */
+
 .text-center {
   text-align: center;
 }
@@ -10987,7 +10985,7 @@ body {
   font-weight: 700;
 }
 
-/* Colors */
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -11003,7 +11001,7 @@ body {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-/* Margin and Padding */
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -11028,7 +11026,6 @@ body {
   margin-top: 4rem;
 }
 
-/* Gradient Line */
 .bg-gradient-to-r {
   background: linear-gradient(to right, rgb(168 85 247), rgb(236 72 153));
 }
@@ -11041,7 +11038,6 @@ body {
   height: 0.25rem;
 }
 
-/* Icon Styles */
 .h-12 {
   height: 3rem;
 }
@@ -11050,7 +11046,6 @@ body {
   width: 3rem;
 }
 
-/* Animations */
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -11061,7 +11056,6 @@ body {
   transition-duration: 300ms;
 }
 
-/* FTCO Section Styles */
 .ftco-section {
   padding: 6rem 0;
 }
@@ -11090,7 +11084,6 @@ body {
   padding-left: 1rem;
 }
 
-/* Responsive Media Queries */
 @media (min-width: 640px) {
   .sm\:px-6 {
     padding-left: 1.5rem;
